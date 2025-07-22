@@ -1,0 +1,7 @@
+torch
+TorchCRF
+conllu
+python-dotenv
+morfessor
+Morfessor-FlatCat
+subword-nmt
