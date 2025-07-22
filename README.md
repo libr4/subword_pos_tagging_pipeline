@@ -1,15 +1,12 @@
-# Projeto de Marcação POS com Segmentação de Subpalavras
+# POS Tagging com Segmentação de Subpalavras
 
-Este projeto implementa um pipeline de Processamento de Linguagem Natural (PLN) para marcação de Part-of-Speech (POS) utilizando uma rede neural BiLSTM-CRF. O diferencial do projeto reside na experimentação com diferentes estratégias de segmentação de subpalavras (Baseline, BPE, Morfessor, FlatCat) para analisar seu impacto na performance do marcador POS.
+Este projeto implementa um pipeline de PLN para POS Tagging, utilizando BiLSTM-CRF.
 
 ## Configuração do Ambiente
 
-Para configurar e rodar o projeto, siga os passos abaixo:
-
 1.  **Clone o repositório:**
     ```bash
-    git clone <URL_DO_SEU_REPOSITORIO>
-    cd your_project_name
+    git clone https://github.com/libr4/subword_pos_tagging_pipeline.git
     ```
 
 2.  **Instale as dependências:**
@@ -19,7 +16,7 @@ Para configurar e rodar o projeto, siga os passos abaixo:
 
 ## Preparação dos Dados
 
-Certifique-se de que seus corpora no formato CoNLL-U estejam na pasta `data/corpora/<LANGUAGE>/`. Por exemplo, para o idioma `nheengatu`, você teria:
+Certifique-se de que seus corpora no formato CoNLL-U estejam na pasta `data/corpora/<LANGUAGE>/` (O projeto já inclui alguns corpora). Por exemplo, para o idioma `nheengatu`, você teria:
 
 ```
 data/corpora/nheengatu/
@@ -30,7 +27,7 @@ data/corpora/nheengatu/
 
 ## Executando o Pipeline
 
-O pipeline completo é orquestrado pelo script `run_pipeline.py`. Você pode controlar o idioma e o tipo de segmentação usando variáveis de ambiente.
+O pipeline completo é executado pelo script `run_pipeline.py`. Você pode controlar o idioma e o tipo de segmentação usando variáveis de ambiente no arquivo .env.
 
 ### Variáveis de Ambiente:
 
