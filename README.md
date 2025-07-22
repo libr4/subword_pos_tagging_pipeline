@@ -1,6 +1,6 @@
 # POS Tagging com Segmentação de Subpalavras
 
-Este projeto implementa um pipeline de PLN para POS Tagging, utilizando BiLSTM-CRF.
+Este projeto implementa um pipeline de PLN para POS Tagging, utilizando BiLSTM-CRF e avalia seu desempenho após treinamento com métodos de segmentação em subpalavras.
 
 ## Configuração do Ambiente
 
